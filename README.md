@@ -6,23 +6,10 @@ NodeJS Isaac connection wrapper
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
-Clone this repo
+With git ssh access to git.irontec.com properly [configured](http://doc.gitlab.com/ce/ssh/README.html), install the library on your project
 
 ```sh
-git clone https://git.irontec.com/internet/veroski-crm-operativo.git
-cd veroski-crm-operativo/nodejs/node-isaac
-```
-
-Link the package
-
-```sh
-npm link
-```
-
-Install in your project
-
-```sh
-npm link node-isaac
+npm i --save git+ssh://git@git.irontec.com:internet/node-isaac.git
 ```
 
 ## Usage
