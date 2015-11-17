@@ -1,0 +1,31 @@
+{
+    "connection": {
+        "valid": {
+            "hostname": "10.10.1.2",
+            "port": "6238"
+        },
+        "invalid": {
+            "hostname": "10.10.1.2",
+            "port": "6239"
+        }
+    },
+    "agent": {
+        "anotherExtension": "220",
+        "valid": {
+            "extension": "223",
+            "password": "1234"
+        },
+        "invalid": {
+            "extension": "223",
+            "password": "123"
+        }
+    },
+    "call": {
+        "callNumber": "220",
+        "queueNumber": "3599"
+    },
+    "queues": {
+        "validQueue": "012_COLA1",
+        "invalidQueue": "012_COLA2"
+    }
+}

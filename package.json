@@ -1,0 +1,42 @@
+{
+  "name": "node-isaac",
+  "version": "1.0.0",
+  "description": "NodeJS Isaac connection wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/index.js",
+    "lint": "node_modules/eslint/bin/eslint.js lib"
+  },
+  "repository": "https://git.irontec.com/internet/veroski-crm-operativo.git",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.9.0",
+    "mocha": "^2.3.3"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "describe": false,
+      "before": false,
+      "it": false
+    }
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "node-uuid": "^1.4.3"
+  },
+  "mdastConfig": {
+    "plugins": {
+      "lint": {
+        "maximum-line-length": 200,
+        "maximum-heading-length": 200,
+        "no-shortcut-reference-link": false
+      }
+    }
+  }
+}
