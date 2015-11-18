@@ -1,6 +1,6 @@
 {
   "name": "isaac-wrapper",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Node.js Isaac connection wrapper",
   "keywords": "isaac, wrapper, VoIP, asterisk",
   "homepage": "https://github.com/irontec/node-isaac",
@@ -8,7 +8,10 @@
       "url" : "https://github.com/irontec/node-isaac/issues",
       "email" : "internet@irontec.com"
   },
-  "license": "EUPL",
+  "license" : {
+      "type" : "EUPL",
+      "url" : "https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt"
+  },
   "author": {
       "name": "Irontec SL",
       "email" : "internet@irontec.com",
