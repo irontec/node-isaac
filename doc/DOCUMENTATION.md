@@ -53,7 +53,7 @@ Makes a login attempt
 Example
 
 ```js
-isaacConnector.login('223', '1234');
+isaacConnector.login(ext, pass);
 ```
 
 ### IsaacConnector.logout()

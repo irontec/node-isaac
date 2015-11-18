@@ -1,22 +1,20 @@
 # node-isaac
 
-NodeJS Isaac connection wrapper
+Node.js Isaac connection wrapper
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
-With git ssh access to git.irontec.com properly [configured](http://doc.gitlab.com/ce/ssh/README.html), install the library on your project
-
 ```sh
-npm i --save git+ssh://git@git.irontec.com:internet/node-isaac.git
+npm i --save isaac-wrapper
 ```
 
 ## Usage
 
 ```js
 // create an instance from the factory
-var isaacConnector = require('node-isaac')(logger);
+var isaacConnector = require('isaac-wrapper')(logger);
 
 // Listen to events
 // * agent.login: event fired as response to a login attempt
@@ -32,11 +30,11 @@ isaacConnector.on('isaac.connect', function(data) {
 // connect to ISAAC specifying a port, host and callback
 isaacConnector.connect('6238', '10.10.1.2', function() {
     // make a login request
-    isaacConnector.login(223,1234);
+    isaacConnector.login(ext,pass);
 });
 ```
 
-[Here](https://github.com/irontec/node-isaac/blob/master/DOCUMENTATION.md) you can read the full documentation
+[Here](https://github.com/irontec/node-isaac/blob/master/doc/DOCUMENTATION.md) you can read the full documentation
 
 ## Tests
 
@@ -63,4 +61,4 @@ npm run lint
 
 ## License
 
-ISC
+EUPL
