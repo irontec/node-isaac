@@ -1,4 +1,4 @@
-# node-isaac API docs
+# isaac-wrapper API docs
 
 ## API Reference
 
@@ -13,7 +13,7 @@ Factory function, returns an IsaacConnector instance
 Example
 
 ```js
-var isaacConnector = require('node-isaac')(logger);
+var isaacConnector = require('isaac-wrapper')(logger);
 ```
 
 ### IsaacConnector.connect(port, host)
