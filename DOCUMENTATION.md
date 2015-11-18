@@ -382,7 +382,7 @@ Event fired as response to a hold attempt in a call
 
 | Param      | Type      | Description                                  |
 | -----      | ----      | -----------                                  |
-| event      | `string`  | Event name ('call.hold')                   |
+| event      | `string`  | Event name ('call.hold')                     |
 | status     | `string`  | Response status (success or error)           |
 | fromQueue  | `boolean` | Hangup request was for queue call            |
 | message    | `string`  | Isaac message                                |
