@@ -1,4 +1,4 @@
-# node-isaac
+# Node.js isaac-wrapper
 
 Node.js Isaac connection wrapper
 
