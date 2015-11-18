@@ -36,7 +36,7 @@ isaacConnector.connect('6238', '10.10.1.2', function() {
 });
 ```
 
-[Here](https://git.irontec.com/internet/node-isaac/blob/master/DOCUMENTATION.md) you can read the full documentation
+[Here](https://github.com/irontec/node-isaac/blob/master/DOCUMENTATION.md) you can read the full documentation
 
 ## Tests
 
