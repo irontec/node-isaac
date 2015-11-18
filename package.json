@@ -1,6 +1,6 @@
 {
   "name": "isaac-wrapper",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Node.js Isaac connection wrapper",
   "keywords": "isaac, wrapper, VoIP, asterisk",
   "homepage": "https://github.com/irontec/node-isaac",
@@ -40,7 +40,6 @@
     "test": "node_modules/mocha/bin/mocha test/index.js",
     "lint": "node_modules/eslint/bin/eslint.js lib"
   },
-  "repository": "https://github.com/irontec/node-isaac",
   "dependencies": {
     "lodash.assign": "^3.2.0",
     "lodash.isfunction": "^3.0.6",
