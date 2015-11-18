@@ -61,7 +61,7 @@ npm run lint
 
 ## License
 
-[EUPL v1.1](https://github.com/irontec/android-kotlin-samples/blob/master/LICENSE.txt)
+[EUPL v1.1](https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt)
 
 ```
 Copyright 2015 Irontec SL
