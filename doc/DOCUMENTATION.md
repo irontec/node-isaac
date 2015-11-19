@@ -2,18 +2,14 @@
 
 ## API Reference
 
-### ( [logger] ) ⇒ IsaacConnector
+### () ⇒ IsaacConnector
 
 Factory function, returns an IsaacConnector instance
-
-| Param    | Type     | Description                                  |
-| -----    | ----     | -----------                                  |
-| [logger] | `Object` | Object to use as logger, defaults to console |
 
 Example
 
 ```js
-var isaacConnector = require('isaac-wrapper')(logger);
+var isaacConnector = require('isaac-wrapper')();
 ```
 
 ### IsaacConnector.connect(port, host)

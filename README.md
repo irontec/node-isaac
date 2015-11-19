@@ -1,5 +1,7 @@
 # Node.js isaac-wrapper
 
+[![NPM version](https://badge.fury.io/js/isaac-wrapper.svg)](http://badge.fury.io/js/isaac-wrapper)
+
 Node.js Isaac connection wrapper
 
 ## Installation
@@ -14,7 +16,7 @@ npm i --save isaac-wrapper
 
 ```js
 // create an instance from the factory
-var isaacConnector = require('isaac-wrapper')(logger);
+var isaacConnector = require('isaac-wrapper')();
 
 // Listen to events
 // * agent.login: event fired as response to a login attempt
@@ -36,6 +38,16 @@ isaacConnector.connect('6238', '10.10.1.2', function() {
 
 [Here](https://github.com/irontec/node-isaac/blob/master/doc/DOCUMENTATION.md) you can read the full documentation
 
+## Debugging
+
+isaac-wrapper uses [debug](https://www.npmjs.com/package/debug) module for logs
+
+In order to get logs from isaac-wrapper you have to add the values to the DEBUG env variable like in the example
+
+```sh
+DEBUG="isaac-wrapper:err, isaac-wrapper:warn, isaac-wrapper:info" node myapp.js
+```
+
 ## Tests
 
 ```sh
@@ -46,6 +58,7 @@ npm run lint
 
 ## Dependencies
 
+-   [debug](https://www.npmjs.com/package/debug) [![NPM version](https://badge.fury.io/js/debug.svg)](http://badge.fury.io/js/debug)
 -   [lodash.assign](https://www.npmjs.com/package/lodash.assign) [![NPM version](https://badge.fury.io/js/lodash.assign.svg)](http://badge.fury.io/js/lodash.assign)
 -   [lodash.isfunction](https://www.npmjs.com/package/lodash.isfunction) [![NPM version](https://badge.fury.io/js/lodash.isfunction.svg)](http://badge.fury.io/js/lodash.isfunction)
 -   [lodash.includes](https://www.npmjs.com/package/lodash.includes) [![NPM version](https://badge.fury.io/js/lodash.includes.svg)](http://badge.fury.io/js/lodash.includes)

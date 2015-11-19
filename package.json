@@ -1,51 +1,52 @@
 {
   "name": "isaac-wrapper",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Node.js Isaac connection wrapper",
   "keywords": "isaac, wrapper, VoIP, asterisk",
   "homepage": "https://github.com/irontec/node-isaac",
   "bugs": {
-      "url" : "https://github.com/irontec/node-isaac/issues",
-      "email" : "internet@irontec.com"
+    "url": "https://github.com/irontec/node-isaac/issues",
+    "email": "internet@irontec.com"
   },
-  "license" : {
-      "type" : "EUPL",
-      "url" : "https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt"
+  "license": {
+    "type": "EUPL",
+    "url": "https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt"
   },
   "author": {
-      "name": "Irontec SL",
-      "email" : "internet@irontec.com",
-      "url" : "https://www.irontec.com/"
+    "name": "Irontec SL",
+    "email": "internet@irontec.com",
+    "url": "https://www.irontec.com/"
   },
   "contributors": {
-      "name": "Aitor Llamas Jiménez",
-      "email" : "aitorllj93@gmail.com",
-      "url" : "https://github.com/aitorllj93"
+    "name": "Aitor Llamas Jiménez",
+    "email": "aitorllj93@gmail.com",
+    "url": "https://github.com/aitorllj93"
   },
   "files": [
-      "index.js",
-      "lib",
-      "test",
-      "doc",
-      "README.md",
-      "package.json"
+    "index.js",
+    "lib",
+    "test",
+    "doc",
+    "README.md",
+    "package.json"
   ],
   "main": "index.js",
-  "directories":{
-      "lib":"./lib",
-      "doc": "./doc"
+  "directories": {
+    "lib": "./lib",
+    "doc": "./doc"
   },
   "repository": "irontec/node-isaac",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha test/index.js",
+    "test": "DEBUG='isaac-wrapper:err' node_modules/mocha/bin/mocha test/index.js",
     "lint": "node_modules/eslint/bin/eslint.js lib"
   },
   "dependencies": {
+    "debug": "^2.2.0",
     "lodash.assign": "^3.2.0",
-    "lodash.isfunction": "^3.0.6",
-    "lodash.includes": "^3.1.3",
-    "lodash.startswith": "^3.0.1",
     "lodash.foreach": "^3.0.3",
+    "lodash.includes": "^3.1.3",
+    "lodash.isfunction": "^3.0.6",
+    "lodash.startswith": "^3.0.1",
     "node-uuid": "^1.4.3"
   },
   "devDependencies": {
@@ -53,8 +54,8 @@
     "eslint": "^1.9.0",
     "mocha": "^2.3.3"
   },
-  "engines" : {
-      "node" : ">=0.12"
+  "engines": {
+    "node": ">=0.12"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
