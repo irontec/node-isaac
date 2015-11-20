@@ -1,6 +1,6 @@
 {
   "name": "isaac-wrapper",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Node.js Isaac connection wrapper",
   "keywords": "isaac, wrapper, VoIP, asterisk",
   "homepage": "https://github.com/irontec/node-isaac",
