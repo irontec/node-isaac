@@ -44,6 +44,14 @@ isaac-wrapper uses [debug](https://www.npmjs.com/package/debug) module for logs
 
 In order to get logs from isaac-wrapper you have to add the values to the DEBUG env variable like in the example
 
+| Key                   | Prints            |
+| ---                   | ------            |
+| 'isaac-wrapper:err'   | Connector errors  |
+| 'isaac-wrapper:info'  | Connector info    |
+| 'isaac-wrapper:write' | Isaac inputs      |
+| 'isaac-wrapper:read'  | Isaac outputs     | 
+| 'isaac-wrapper:event' | Connector events  |
+
 ```sh
 DEBUG="isaac-wrapper:err, isaac-wrapper:warn, isaac-wrapper:info" node myapp.js
 ```
