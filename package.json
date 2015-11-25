@@ -43,7 +43,7 @@
     "test-debug": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
     "lint": "node_modules/eslint/bin/eslint.js lib",
     "report": "node_modules/plato/bin/plato -r -d report lib",
-    "release": "node_modules/semantic-release/bin pre && npm publish && node_modules/semantic-release/bin post"
+    "release": "node_modules/semantic-release/bin/semantic-release.js pre && npm publish && node_modules/semantic-release/bin/semantic-release.js post"
   },
   "dependencies": {
     "debug": "^2.2.0",
