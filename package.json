@@ -43,8 +43,9 @@
     "test-debug": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
     "clean": "rm -fr node_modules",
     "lint": "node_modules/eslint/bin/eslint.js lib",
-    "report": "node_modules/plato/bin/plato -r -d report lib",
-    "release": "node_modules/semantic-release/bin/semantic-release.js pre && npm publish && node_modules/semantic-release/bin/semantic-release.js post"
+    "report": "node_modules/plato/bin/plato -r -d gh-pages/report lib",
+    "release": "node_modules/semantic-release/bin/semantic-release.js pre && npm publish && node_modules/semantic-release/bin/semantic-release.js post",
+    "publish:gh-pages": "scripts/gh-pages.sh gh-pages"
   },
   "dependencies": {
     "debug": "^2.2.0",
