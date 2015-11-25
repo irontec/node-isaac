@@ -4,7 +4,7 @@
 [![NPM dependencies](https://img.shields.io/david/irontec/node-isaac.svg)](https://www.npmjs.com/package/isaac-wrapper)
 [![NPM devdependencies](https://img.shields.io/david/dev/irontec/node-isaac.svg)](https://www.npmjs.com/package/isaac-wrapper)
 [![node](https://img.shields.io/node/v/isaac-wrapper.svg)](https://nodejs.org/download/release/v0.12.8/)
-[![license](https://img.shields.io/npm/l/isaac-wrapper.svg)](https://github.com/irontec/node-isaac/blob/master/LICENSE.txt)
+[![license](https://img.shields.io/npm/l/isaac-wrapper.svg)](https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
