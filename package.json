@@ -1,6 +1,5 @@
 {
   "name": "isaac-wrapper",
-  "version": "0.8.1",
   "description": "Node.js Isaac connection wrapper",
   "keywords": "isaac, wrapper, VoIP, asterisk",
   "homepage": "https://github.com/irontec/node-isaac",
@@ -35,11 +34,15 @@
     "lib": "./lib",
     "doc": "./doc"
   },
-  "repository": "irontec/node-isaac",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irontec/node-isaac.git"
+  },
   "scripts": {
     "test": "DEBUG='isaac-wrapper:err' node_modules/mocha/bin/mocha test/index.js",
     "test-with-logs": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
-    "lint": "node_modules/eslint/bin/eslint.js lib"
+    "lint": "node_modules/eslint/bin/eslint.js lib",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "debug": "^2.2.0",
@@ -55,7 +58,8 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "eslint": "^1.9.0",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "semantic-release": "^4.3.5"
   },
   "engines": {
     "node": ">=0.12"
