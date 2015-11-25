@@ -41,6 +41,7 @@
   "scripts": {
     "test": "DEBUG='isaac-wrapper:err' node_modules/mocha/bin/mocha test/index.js",
     "test-debug": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
+    "clean": "rm -fr node_modules",
     "lint": "node_modules/eslint/bin/eslint.js lib",
     "report": "node_modules/plato/bin/plato -r -d report lib",
     "release": "node_modules/semantic-release/bin/semantic-release.js pre && npm publish && node_modules/semantic-release/bin/semantic-release.js post"
