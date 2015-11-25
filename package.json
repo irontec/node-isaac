@@ -64,6 +64,9 @@
   "engines": {
     "node": ">=0.12"
   },
+  "release": {
+    "verifyConditions": []
+  },
   "eslintConfig": {
     "extends": "eslint:recommended",
     "env": {
