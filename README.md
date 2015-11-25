@@ -1,6 +1,7 @@
 # Node.js isaac-wrapper
 
 [![NPM version](https://badge.fury.io/js/isaac-wrapper.svg)](http://badge.fury.io/js/isaac-wrapper)
+[![NPM dependencies](https://david-dm.org/irontec/node-isaac.svg)](https://david-dm.org/irontec/node-isaac.svg)
 
 Node.js Isaac connection wrapper
 
