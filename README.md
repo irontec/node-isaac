@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/isaac-wrapper.svg)](https://www.npmjs.com/package/isaac-wrapper)
 [![NPM dependencies](https://img.shields.io/david/irontec/node-isaac.svg)](https://www.npmjs.com/package/isaac-wrapper)
-[![NPM devdependencies](https://david-dm.org/dev/irontec/node-isaac.svg)](https://www.npmjs.com/package/isaac-wrapper)
+[![NPM devdependencies](https://img.shields.io/david/dev/irontec/node-isaac.svg)](https://www.npmjs.com/package/isaac-wrapper)
 [![node](https://img.shields.io/node/v/isaac-wrapper.svg)](https://nodejs.org/download/release/v0.12.8/)
 [![license](https://img.shields.io/npm/l/isaac-wrapper.svg)](https://github.com/irontec/node-isaac/blob/master/LICENSE.txt)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
