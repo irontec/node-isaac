@@ -40,9 +40,10 @@
   },
   "scripts": {
     "test": "DEBUG='isaac-wrapper:err' node_modules/mocha/bin/mocha test/index.js",
-    "test-with-logs": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
+    "test-debug": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
     "lint": "node_modules/eslint/bin/eslint.js lib",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "report": "node_modules/plato/bin/plato -r -d report lib",
+    "release": "node_modules/semantic-release/bin pre && npm publish && node_modules/semantic-release/bin post"
   },
   "dependencies": {
     "debug": "^2.2.0",
@@ -57,8 +58,10 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
+    "cz-conventional-changelog": "^1.1.4",
     "eslint": "^1.9.0",
     "mocha": "^2.3.3",
+    "plato": "^1.5.0",
     "semantic-release": "^4.3.5"
   },
   "engines": {
@@ -90,5 +93,10 @@
       }
     }
   },
-  "version": "0.9.1"
+  "version": "0.9.1",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
