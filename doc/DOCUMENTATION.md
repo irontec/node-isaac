@@ -24,7 +24,7 @@ Starts a net.Socket connection
 Example
 
 ```js
-isaacConnector.connect(6238, 10.10.1.2);
+isaacConnector.connect(6238, '10.10.1.2');
 ```
 
 ### IsaacConnector.disconnect()
@@ -109,13 +109,14 @@ Example
 isaacConnector.getQueues();
 ```
 
-### isaacConnector.joinQueue(queueName)
+### isaacConnector.joinQueue(queueName, [priority])
 
 Joins the agent to specified queue
 
 | Param         | Type     | Description                       |
 | -----         | ----     | -----------                       |
 | queueName     | `string` | Queue identifier                  |
+| [priority]    | `number` | Agent priority on queue           |
 
 Example
 

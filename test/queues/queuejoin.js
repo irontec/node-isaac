@@ -9,7 +9,7 @@ function QueueJoin(queueName, cb) {
         cb(data);
     });
 
-    connector.joinQueue(queueName);
+    connector.joinQueue(queueName, 1);
 
 }
 
