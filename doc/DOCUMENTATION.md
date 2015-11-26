@@ -366,7 +366,9 @@ Event fired when a call for the logged agent is created or changed it's status
 
 | Value         |
 | -----         |
+| STARTING       |
 | RINGING       |
+| BUSY          |
 | ANSWERED      |
 | HOLD          |
 | UNHOLD        |
