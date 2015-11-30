@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Plato - lib/index.js</title>
+  <title>Plato - lib/constructor.js</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
@@ -36,7 +36,7 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h1>lib/index.js</h1>
+    <h1>lib/constructor.js</h1>
   </div>
 </div>
 
@@ -44,11 +44,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"  data-container="body"></i></a></h2>
-      <p class="stat">51.91</p>
+      <p class="stat">76.50</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h2>
-      <p class="stat">60</p>
+      <p class="stat">16</p>
     </div>
   </div>
   <div class="row historical">
@@ -62,11 +62,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty" data-container="body"></i></a></h2>
-      <p class="stat">6.69</p>
+      <p class="stat">3.81</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs" data-container="body"></i></a></h2>
-      <p class="stat">0.42</p>
+      <p class="stat">0.09</p>
     </div>
   </div>
 </div>
@@ -91,62 +91,18 @@
   <div class="row">
     <textarea id="file-source" class="col-md-12">&#039;use strict&#039;;
 
-var assign = require(&#039;lodash.assign&#039;);
-var create = require(&#039;lodash.create&#039;);
-var events = require(&#039;events&#039;);
 var uuid = require(&#039;node-uuid&#039;);
-
-var methods = require(&#039;./methods&#039;);
+var util = require(&#039;util&#039;);
+var events = require(&#039;events&#039;);
 
 function IsaacConnector() {
-
-    var connector = create(
-        // Prototype
-        events.EventEmitter.prototype,
-        assign(
-            // Properties
-            {
-                constructor: events.EventEmitter,
-                id: uuid.v4(),
-                connected: false,
-                caughtError: false,
-                socket: null
-            },
-            // Methods
-            {
-                &#039;write&#039;: methods.write,
-                &#039;processMessage&#039;: methods.processMessage,
-
-                &#039;createSocket&#039;: methods.socket.create,
-                &#039;connect&#039;: methods.socket.connect,
-                &#039;disconnect&#039;: methods.socket.disconnect,
-
-                &#039;login&#039;: methods.agent.login,
-                &#039;logout&#039;: methods.agent.logout,
-
-                &#039;pause&#039;: methods.device.pause,
-                &#039;unpause&#039;: methods.device.unpause,
-
-                &#039;suscribe&#039;: methods.suscribe,
-
-                &#039;createCall&#039;: methods.call.makeCall,
-                &#039;hangupCall&#039;: methods.call.hangup,
-                &#039;holdCall&#039;: methods.call.hold,
-                &#039;unholdCall&#039;: methods.call.unhold,
-                &#039;answerCall&#039;: methods.call.answer,
-
-                &#039;getQueues&#039;: methods.queues.get,
-                &#039;joinQueue&#039;: methods.queues.join,
-                &#039;leaveQueue&#039;: methods.queues.leave
-            }
-        )
-    );
-
-    connector.createSocket();
-
-    return connector;
-
+    this.id = uuid.v4();
+    this.connected = false;
+    this.caughtError = false;
+    this.socket = null;
 }
+
+util.inherits(IsaacConnector, events.EventEmitter);
 
 module.exports = IsaacConnector;</textarea>
   </div>
