@@ -2,13 +2,7 @@
 
 var config = require('./config');
 
-var fakeConsole = {
-    log: noop,
-    info: noop,
-    error: noop
-};
-
-var isaacConnector = require('../')(fakeConsole);
+var isaacConnector = require('../')();
 
 var helpers = require('./tests/helpers')(isaacConnector, config);
 
