@@ -40,6 +40,7 @@
     "test-debug": "DEBUG='isaac-wrapper:*' node_modules/mocha/bin/mocha test/index.js",
     "clean": "rm -fr node_modules",
     "lint": "node_modules/eslint/bin/eslint.js lib",
+    "code-style": "node_modules/jscs/bin/jscs lib -c lib/.jscsrc",
     "report": "node_modules/plato/bin/plato -r -e .eslintrc -d gh-pages/report lib",
     "release": "node_modules/semantic-release/bin/semantic-release.js pre && npm publish && node_modules/semantic-release/bin/semantic-release.js post",
     "publish:gh-pages": "scripts/gh-pages.sh gh-pages"
@@ -62,6 +63,7 @@
     "chai": "^3.4.1",
     "cz-conventional-changelog": "^1.1.4",
     "eslint": "^1.9.0",
+    "jscs": "^2.7.0",
     "mocha": "^2.3.3",
     "plato": "^1.5.0",
     "semantic-release": "^4.3.5"
