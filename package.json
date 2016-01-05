@@ -57,7 +57,8 @@
     "lodash.isundefined": "^3.0.1",
     "lodash.noop": "^3.0.0",
     "lodash.startswith": "^3.0.1",
-    "node-uuid": "^1.4.3"
+    "node-uuid": "^1.4.3",
+    "lodash.isarray": "latest"
   },
   "devDependencies": {
     "chai": "^3.4.1",
