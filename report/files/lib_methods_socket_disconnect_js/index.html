@@ -93,7 +93,7 @@
 
 var debug = require(&#039;debug&#039;)(&#039;isaac-wrapper:err&#039;);
 
-function Disconnect() {
+function disconnect() {
 
     var message = &#039;LOGOUT&#039; + &#039;\n&#039;;
 
@@ -106,13 +106,13 @@ function Disconnect() {
         this.socket.end();
         this.socket.destroy();
     }
-    catch(err) {
+    catch (err) {
         debug(&#039;[id:&quot;%s&quot; message:&quot;%s&quot; at:&quot;%s&quot;]&#039;, this.id, &#039;Error ending session&#039;, &#039;Disconnect&#039;);
         this.socket.destroy();
     }
 }
 
-module.exports = Disconnect;</textarea>
+module.exports = disconnect;</textarea>
   </div>
 </div>
 
