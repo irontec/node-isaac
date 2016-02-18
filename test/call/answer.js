@@ -31,20 +31,21 @@ function Answer(cb) {
     });
 
     connector.on('call.status', function(data) {
+        
         if (data.status === 'RINGING') {
-            connector.answerCall(data.refId);
+            connector.answerCall(data.isaacId);
         }
 
         if (data.status === 'ANSWERED') {
-            connector.holdCall(data.refId, true);
+            connector.holdCall(data.isaacId, true);
         }
 
         if (data.status === 'HOLD') {
-            connector.unholdCall(data.refId, true);
+            connector.unholdCall(data.isaacId, true);
         }
 
         if (data.status === 'UNHOLD') {
-            connector.hangupCall(data.refId, true);
+            connector.hangupCall(data.isaacId, true);
             connector.removeAllListeners('call.status');
             anotherIsaacConnector.disconnect();
             cb(data);

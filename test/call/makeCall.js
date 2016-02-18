@@ -8,7 +8,7 @@ function Call(number, cb) {
         if (data.status === 'STARTING' && data.source === 'AGENT') {
             result = data;
             setTimeout(function() {
-                connector.hangupCall(data.refId, false);
+                connector.hangupCall(data.isaacId, false);
             }, 1000);
         }
         if (data.status === 'UNKNOWNHANGUP' || data.status === 'HANGUP') {
