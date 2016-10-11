@@ -99,7 +99,7 @@
       }
     }
   },
-  "version": "0.9.5",
+  "version": "0.10.0",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
